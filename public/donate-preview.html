@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preview Logo Donazioni Félinia</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #F5EFE7 0%, #e8dccf 100%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        .container {
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+            text-align: center;
+            max-width: 600px;
+        }
+        h1 {
+            color: #0C7463;
+            margin-bottom: 30px;
+        }
+        .button-showcase {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            margin-top: 30px;
+        }
+        .button-version {
+            padding: 20px;
+            background: #f9f9f9;
+            border-radius: 15px;
+        }
+        .button-version h3 {
+            color: #0C7463;
+            margin-bottom: 15px;
+        }
+        
+        /* Versione 1: Pulsante Gradiente con Cuore */
+        .donate-btn-v1 {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: linear-gradient(135deg, #0C7463 0%, #0a5a4d 100%);
+            color: white;
+            padding: 16px 32px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 18px;
+            box-shadow: 0 4px 15px rgba(12, 116, 99, 0.3);
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+        }
+        .donate-btn-v1:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(12, 116, 99, 0.4);
+        }
+        .donate-btn-v1 .heart {
+            font-size: 24px;
+            animation: heartbeat 1.5s infinite;
+        }
+        
+        /* Versione 2: Pulsante con Bordo e Cuore */
+        .donate-btn-v2 {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: white;
+            color: #0C7463;
+            padding: 16px 32px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 18px;
+            border: 3px solid #0C7463;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        .donate-btn-v2:hover {
+            background: #0C7463;
+            color: white;
+            transform: scale(1.05);
+        }
+        .donate-btn-v2 .heart {
+            font-size: 24px;
+        }
+        
+        /* Versione 3: Card Elegante */
+        .donate-btn-v3 {
+            display: inline-flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 8px;
+            background: linear-gradient(135deg, #D6B36A 0%, #c9a55e 100%);
+            color: white;
+            padding: 20px 40px;
+            border-radius: 20px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 20px;
+            box-shadow: 0 8px 25px rgba(214, 179, 106, 0.4);
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+        }
+        .donate-btn-v3:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 35px rgba(214, 179, 106, 0.5);
+        }
+        .donate-btn-v3 .heart-big {
+            font-size: 36px;
+            animation: heartbeat 1.5s infinite;
+        }
+        .donate-btn-v3 .subtitle {
+            font-size: 14px;
+            font-weight: 400;
+            opacity: 0.9;
+        }
+        
+        /* Versione 4: Minimalista con Icona */
+        .donate-btn-v4 {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            background: #0C7463;
+            color: white;
+            padding: 14px 28px;
+            border-radius: 12px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 16px;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+        }
+        .donate-btn-v4:hover {
+            background: #0a5a4d;
+            box-shadow: 0 4px 12px rgba(12, 116, 99, 0.3);
+        }
+        .donate-btn-v4 .icon {
+            width: 24px;
+            height: 24px;
+        }
+        
+        @keyframes heartbeat {
+            0%, 100% { transform: scale(1); }
+            25% { transform: scale(1.1); }
+            50% { transform: scale(1); }
+        }
+        
+        .note {
+            margin-top: 30px;
+            padding: 20px;
+            background: #fff3cd;
+            border-left: 4px solid #D6B36A;
+            border-radius: 8px;
+            text-align: left;
+        }
+        .note strong {
+            color: #0C7463;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🐱 Félinia - Preview Logo Donazioni</h1>
+        <p>Ecco 4 proposte di design per il pulsante "Sostienici ❤️"</p>
+        
+        <div class="button-showcase">
+            <div class="button-version">
+                <h3>Versione 1: Gradiente Verde con Cuore Animato</h3>
+                <a href="#" class="donate-btn-v1">
+                    <span class="heart">❤️</span>
+                    <span>Sostienici</span>
+                </a>
+            </div>
+            
+            <div class="button-version">
+                <h3>Versione 2: Bordo Verde con Hover</h3>
+                <a href="#" class="donate-btn-v2">
+                    <span class="heart">💚</span>
+                    <span>Sostienici</span>
+                </a>
+            </div>
+            
+            <div class="button-version">
+                <h3>Versione 3: Card Oro Elegante (CONSIGLIATA)</h3>
+                <a href="#" class="donate-btn-v3">
+                    <span class="heart-big">❤️</span>
+                    <span>Sostienici</span>
+                    <span class="subtitle">Aiuta i gatti di Félinia</span>
+                </a>
+            </div>
+            
+            <div class="button-version">
+                <h3>Versione 4: Minimalista con Icona</h3>
+                <a href="#" class="donate-btn-v4">
+                    <svg class="icon" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                    </svg>
+                    <span>Sostienici</span>
+                </a>
+            </div>
+        </div>
+        
+        <div class="note">
+            <strong>📝 Note:</strong><br>
+            • Ogni pulsante sarà tradotto automaticamente in tutte le 5 lingue<br>
+            • Link diretto a PayPal con email: feliniasite@gmail.com<br>
+            • Il cuore può essere animato per attirare l'attenzione<br>
+            • Quale versione preferisci? Posso anche combinare elementi!
+        </div>
+    </div>
+</body>
+</html>
